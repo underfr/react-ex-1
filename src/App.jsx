@@ -1,12 +1,10 @@
 import './App.css'
 
-function ToDo() {
+function ToDo({todo, date}) {
   return (
     <>
     <ul>
-      <li>Faire les courses</li>
-      <li>Mettre de l'essence</li>
-      <li>Laver le linge</li>
+      <li>{todo} - {date}</li>
     </ul>
     </>
   )
@@ -18,7 +16,11 @@ function App(){
     <>
     <h1>Todo List</h1>
     <h2>{DATE.toLocaleString()}</h2>
-    <ToDo />
+    <ul>
+      <ToDo todo={'Faire la vaiselle'} date={"20-01-2026"}/>
+      <ToDo todo={'Faire le ménage'} date={"21-03-2026"}/>
+      <ToDo todo={"Mettre de l'essence"} date={"30-03-2026"}/>
+    </ul>
     </>
   )
 }
