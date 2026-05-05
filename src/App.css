@@ -182,3 +182,12 @@
     border-right-color: var(--border);
   }
 }
+
+.green {
+  background-color: yellowgreen;
+  color: black;
+}
+.orange {
+  background-color: orange;
+  color: black;
+}
